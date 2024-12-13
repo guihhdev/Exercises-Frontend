@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="main.js" defer></script>
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <button></button>
+    <h1></h1>
+
+
+    
+    <script>
+        var nome = window.prompt("Qual é seu nome? ")
+        document.writeln(`<h2>Seu nome é ${nome}`)
+        document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}`)
+        var n1 = Number.parseFloat(window.prompt("Digite um número"))
+        var n2 = Number.parseFloat(window.prompt("Digite um número"))
+        var s = n1+n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        document.write(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        /*String(n)  ou  n.toString()*/
+    </script>
+    
+</body>
+</html>

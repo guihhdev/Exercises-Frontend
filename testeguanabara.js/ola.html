@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        let n1 = prompt("Digite o primeiro número: ");
+        let n2 = prompt("Digite o segundo número: ");
+
+        /* convertendo strings para números */
+        n1 = parseFloat(n1);         /* numero para String*/ // para fazer de numero para String: (variavel).toString() ou String(variavel)
+        n2 = parseFloat(n2);
+
+        if (isNaN(n1) || isNaN(n2)) {
+            console.log("Por favor, insira números válidos.");
+        } else {
+            let resultado = n1 + n2;
+            //window.alert("o resultado de "+n1 +"+"+ n2 +" É " + resultado)
+            window.alert("o resultado de ${n1} + ${n2} = ${resultado}") 
+        }
+    </script>
+</body>
+</html>

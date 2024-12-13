@@ -1,0 +1,63 @@
+<!-- estilizar quando eu tiver um tempo livre-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a Survey Form</p>
+
+    <form id="survey-form">
+      <!-- Nome -->
+      <label for="name" id="name-label">Enter your name</label>
+      <input placeholder="John" type="text" id="name" name="name" required />
+
+      <!-- E-mail -->
+      <label for="email" id="email-label">Enter your email</label>
+      <input placeholder="johncontact@gmail.com" type="email" id="email" name="email" required />
+
+      <!-- Número -->
+      <label for="number" id="number-label">Enter a number</label>
+      <input placeholder="16-20" type="number" id="number" name="number" min="16" max="20" required />
+
+      <!-- Dropdown -->
+      <label for="dropdown">Choose an option:</label>
+      <select id="dropdown" name="dropdown">
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </select>
+
+      <!-- Radio Buttons -->
+      <fieldset>
+        <legend>Choose your account type</legend>
+        <input id="personal-account" type="radio" value="personal-account" name="account-type" checked />
+        <label for="personal-account">Personal Account</label>
+
+        <input id="business-account" type="radio" value="business-account" name="account-type" />
+        <label for="business-account">Business Account</label>
+      </fieldset>
+
+      <!-- Checkboxes -->
+      <fieldset>
+        <legend>What do you enjoy? (Select all that apply)</legend>
+        <input type="checkbox" id="coding" name="hobby" value="coding" />
+        <label for="coding">Coding</label>
+
+        <input type="checkbox" id="reading" name="hobby" value="reading" />
+        <label for="reading">Reading</label>
+      </fieldset>
+
+      <!-- Textarea -->
+      <label for="text">What do you like to do:</label>
+      <textarea id="text" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+
+      <!-- Submit -->
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+

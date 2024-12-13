@@ -1,0 +1,26 @@
+#nav-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff; /* Exemplo: cor de fundo */
+    z-index: 1000; /* Certifique-se de que está acima de outros elementos */
+    display: flex; /* Usando flexbox */
+    justify-content: space-around;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra opcional para destaque */
+  }
+  
+  @media (max-width: 600px) {
+    #nav-bar {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+    form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 20px 0;
+  }

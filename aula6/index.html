@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo básico</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="principal.js" defer></script>
+    <style>
+        body{
+            background-color:rgb(7, 197, 245);
+            color:white;
+            font: normal 12pt Arial;
+        }
+        h1{
+            color:black; /* comentario/*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello Word!</h1>
+    <p id="demo">Este texto será modificado pelo JavaScript.</p> <!-- Isso é um comentario-->
+    <script>
+    
+     var nome = window.prompt('Qual é seu nome?')
+     window.alert("Prazer em te conhecer " +nome) // concatenação
+    </script>
+    
+</body>
+</html>

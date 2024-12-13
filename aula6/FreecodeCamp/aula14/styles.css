@@ -1,0 +1,295 @@
+/*.wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+  }
+  
+  .line:nth-of-type(2) {
+    transform: rotate(60deg);
+  }
+  .line:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  .line:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  .line:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  .line:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+  
+  .cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
+  }
+  
+  .cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+  }
+  .cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+  }
+  
+  @keyframes wheel {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+  }
+  @keyframes cabins {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      background-color: red;
+    }
+    50% {
+      background-color:goldenrod;
+    }
+    75%{
+      background-color:green;
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+
+  .Merry-Christmas h1{
+    position:absolute;
+    right:150px;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3rem;
+    color: crimson;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .Christmas-tree .log{
+    background-color: brown;
+    position:absolute;
+    right:360px;
+    height:50px;
+    width:20px;
+    bottom:200px;
+  }
+
+  .layer {
+    position:relative;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    margin-bottom: -20px;
+    left:925px;
+    top:215px;
+  }
+  
+  .layer1 {
+    border-bottom: 50px solid green;
+  }
+  
+  .layer2 {
+    border-bottom: 70px solid green;
+  }
+  
+  .layer3 {
+    border-bottom: 90px solid green;
+  } */
+
+  .wheel {
+    border: 2px solid black;
+    border-radius: 50%;
+    margin-left: 50px;
+    position: absolute;
+    height: 55vw;
+    width: 55vw;
+    max-width: 500px;
+    max-height: 500px;
+    animation: wheel 10s linear infinite;
+  }
+  
+  .line {
+    background-color: black;
+    width: 50%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 0%;
+  }
+  
+  .line:nth-of-type(2) {
+    transform: rotate(60deg);
+  }
+  .line:nth-of-type(3) {
+    transform: rotate(120deg);
+  }
+  .line:nth-of-type(4) {
+    transform: rotate(180deg);
+  }
+  .line:nth-of-type(5) {
+    transform: rotate(240deg);
+  }
+  .line:nth-of-type(6) {
+    transform: rotate(300deg);
+  }
+  
+  .cabin {
+    background-color: red;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    border: 2px solid;
+    transform-origin: 50% 0%;
+    animation: cabins 10s ease-in-out infinite;
+  }
+  
+  .cabin:nth-of-type(1) {
+    right: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(2) {
+    right: 17%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(3) {
+    right: 67%;
+    top: 93.5%;
+  }
+  .cabin:nth-of-type(4) {
+    left: -8.5%;
+    top: 50%;
+  }
+  .cabin:nth-of-type(5) {
+    left: 17%;
+    top: 7%;
+  }
+  .cabin:nth-of-type(6) {
+    right: 17%;
+    top: 7%;
+  }
+  
+  @keyframes wheel {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes cabins {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      background-color: red;
+    }
+    50% {
+      background-color: goldenrod;
+    }
+    75% {
+      background-color: green;
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  .Merry-Christmas {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .Merry-Christmas h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3rem;
+    color: crimson;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .Christmas-tree {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .log {
+    background-color: brown;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .layer {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+  
+  .layer1 {
+    border-bottom: 50px solid green;
+    position: absolute;
+    bottom: 50px;
+  }
+  .layer2 {
+    border-bottom: 70px solid green;
+    position: absolute;
+    bottom: 100px;
+  }
+  .layer3 {
+    border-bottom: 90px solid green;
+    position: absolute;
+    bottom: 170px;
+  }
+  
